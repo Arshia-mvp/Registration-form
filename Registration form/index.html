@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم ثبت نام</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <h2>فرم ثبت نام</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="firstName">نام :</label>
+                    <input class="input1" type="text" id="firstName" name="firstName">
+                    <span class="error-message" id="firstName-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">نام خانوادگی :</label>
+                    <input class="input1" type="text" id="lastName" name="lastName">
+                    <span class="error-message" id="lastName-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="address">آدرس :</label>
+                    <input class="input1" type="text" id="address" name="address">
+                    <span class="error-message" id="address-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">تلفن :</label>
+                    <input class="input1" type="text" id="phone" name="phone">
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="nationalCode">کد ملی :</label>
+                    <input class="input1" type="text" id="nationalCode" name="nationalCode">
+                    <span class="error-message" id="nationalCode-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="profileImage">تصویر :</label>
+                    <input class="input1" type="file" id="profileImage" name="profileImage" accept="image/*">
+                    <span class="error-message" id="profileImage-error"></span>
+                </div>
+                <button type="submit">ثبت اطلاعات</button>
+            </form>
+        </div>
+        <div id="profile-container" style="display: none;">
+            <h2>اطلاعات شما با موفقیت ثبت شد</h2>
+            <img  id="profile-picture" src="#" alt="عکس پروفایل" width="150">
+            <div id="profile-details"></div>
+            <button id="reset-button">ثبت مجدد اطلاعات</button>
+        </div>
+    </div>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
